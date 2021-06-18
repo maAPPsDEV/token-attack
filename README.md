@@ -24,7 +24,9 @@ _Hint:_
 **You won't get success to attack if the target contract has been complied in Solidity 0.8.0 or uppper** 🤔
 
 > [**Solidity v0.8.0 Breaking Changes**](https://docs.soliditylang.org/en/v0.8.5/080-breaking-changes.html?highlight=underflow#silent-changes-of-the-semantics)
+>
 > Arithmetic operations revert on **underflow** and **overflow**. You can use `unchecked { ... }` to use the previous wrapping behaviour.
+>
 > Checks for overflow are very common, so we made them the default to increase readability of code, even if it comes at a slight increase of gas costs.
 
 I had tried to do everything in Solidity 0.8.5 at first time, but it didn't work, as it reverted transactions everytime it met underflow.
